@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetPaws - Dummy Pet Store</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #f7f9fb; color: #222; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+    }
+    header img { height: 60px; }
+    nav button {
+      margin-left: 10px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 10px;
+      background: #00b8c8;
+      color: white;
+      cursor: pointer;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #dff9fb, #f6fcff);
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+    .hero p { margin-bottom: 20px; }
+    .hero button {
+      padding: 12px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      background: #00b8c8;
+      color: white;
+      cursor: pointer;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .card h3 { margin: 15px 0 10px; }
+    .card button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #00b8c8;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .payment {
+      background: white;
+      margin: 40px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .payment h2 { margin-bottom: 20px; }
+    .payment input, .payment select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .payment button {
+      width: 100%;
+      padding: 14px;
+      background: #00b8c8;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <button>Home</button>
+    <button>Food</button>
+    <button>Toys</button>
+    <button>Offers</button>
+    <button>Contact</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Welcome to PetPaws 🐾</h1>
+  <p>Your one-stop online store for pet food, toys, and essentials.</p>
+  <button>Shop Food</button>
+  <button>Explore Toys</button>
+</section>
+
+<section class="products">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee" alt="Dog Food">
+    <h3>Premium Dog Food</h3>
+    <p>₹799</p>
+    <button>Add to Cart</button>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b" alt="Cat Toy">
+    <h3>Cat Play Toy</h3>
+    <p>₹499</p>
+    <button>Add to Cart</button>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" alt="Pet Treats">
+    <h3>Healthy Pet Treats</h3>
+    <p>₹299</p>
+    <button>Add to Cart</button>
+  </div>
+</section>
+
+<section class="payment">
+  <h2>Dummy Payment Section 💳</h2>
+  <input type="text" placeholder="Cardholder Name">
+  <input type="text" placeholder="Card Number">
+  <input type="text" placeholder="Expiry Date">
+  <select>
+    <option>Select Payment Method</option>
+    <option>Credit Card</option>
+    <option>UPI</option>
+    <option>Net Banking</option>
+  </select>
+  <button>Proceed to Pay</button>
+</section>
+
+<footer>
+  © 2026 PetPaws - Dummy Website for Heatmap Testing
+</footer>
+
+</body>
+</html>
